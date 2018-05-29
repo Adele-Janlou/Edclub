@@ -1,0 +1,290 @@
+.container{
+  padding-left: 0;
+}
+.navbar  {
+  background-color: #525BCA !important;
+  font-weight: 500;
+  padding-bottom: 0;
+  text-align: center;
+  border-bottom: solid 2px #3F4EAE;  
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-weight: 500;
+}
+.navbar-brand {  
+  padding: 14px 13px 13px 14px;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+
+.after-vis{
+  display: none !important;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #fff;
+}
+
+.navinput{
+  text-align: left;
+}
+.search-row{
+  text-align: left;
+  margin-left: -45px;
+}
+.middle-search {
+    width:55%;
+    background-color: #757BD5;
+    border:  1px solid  #757BD5;
+    border-radius: 5px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 35px;
+    flex-direction: column;
+    word-wrap: break-word;
+    margin-top:4px;
+   font-size: 13px;
+    color:#fff;
+
+}
+.top-script{
+  padding-top: 10px;
+  padding-right: -30px;
+}
+
+span.glyphicon.glyphicon-search{ 
+  color:#fff;
+  top: 10;
+  right:-35px; 
+}
+
+.navbar-default .navbar-collapse, .navbar-default 
+{
+   background-color: #525BCA;
+   padding-top: 3px;
+   padding-bottom: 1px;
+   padding-left: 5px;
+   padding-right: 0px;
+ }
+
+ .demo{
+    color: #fff;
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: left;
+    padding-right: 5px;
+ }
+
+
+
+body {
+  padding-top: 50px;
+  background-color: #F4F6F8;
+  font-weight: 300;
+  line-height: 1.6;
+  color:#4D4D4D;
+  width: 1px;
+  min-width: 100%;
+  font-size: 14px;
+  font-family: arial;
+  }
+  
+ul.nav.flex-column{
+  padding-top:30px;
+}
+
+.glyphicon {
+   color:#919EAB;
+   margin-right: 10px; 
+   margin-left: 0px;
+   padding-left: 10px;
+   margin-top: 5px; 
+ 
+}
+.media-left, .media-body {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.nav-link>span:hover{
+  color: #3F4EAE;
+}
+
+.subside{
+  margin-left: 40px;
+  padding: 5px;
+  font-size: 13px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;   
+    display: flex;
+    justify-content: center;
+   
+}
+.sub-ul{
+  padding: 0;
+  margin-left: -4px;
+}
+.sub-li{
+  padding-right: 0;
+}
+.sub-li>a{
+text-decoration: none;
+color:#4D4D4D;
+
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    font-size: 13px;
+  }
+   
+
+.nav>li>a {
+  color:#000;
+}
+.nav>li>a:hover{
+  color: #5C6AC4;
+  background: #F4F6F8;
+}
+
+.sub-li>a:hover{
+background: #E3EAF1;
+color: #5C6AC4;  
+}
+
+aside {  
+  padding-right: 0;
+  font-weight: 400;
+}
+
+article { 
+border-left: solid 2px #e6e6e6;
+color:#4D4D4D;
+font-weight: 400;
+padding-left: 35px;
+padding-top: 40px;
+ }
+.middle-title{
+  padding-left: 25px;
+}
+
+.try-now{
+  background: #3946A7;
+  color: #fff;
+  border-color: #210A6E;
+  font-size: 13px;
+  float: right;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+}
+
+
+.breadcrumb{
+  margin-bottom: 0px;
+}
+
+.con-right{
+  margin-left: 11px;
+  }
+  .panel{
+    padding-top: : 20px;
+    border: solid 1.5px #e6e6e6;
+  }
+#middle-time {
+    margin-left: -35px;
+    margin-top: 11px;
+    font-size: 12px;
+}
+h3 {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+h4{
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+h5{
+
+  font-weight: bold;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.form-control{
+  padding: 4px;
+  width: 85%;
+}
+.row {
+     margin-right: 0px; 
+    margin-left: 0px; 
+}
+
+
+label{
+  color: #8E8E8E;
+}
+select{
+  color: #1A1A1A;
+ }
+ #exampleFormControlSelect1{
+  color: #1A1A1A;
+ }
+ .second-panel{
+  color: #8E8E8E;
+ }
+ 
+
+.alert-warning {
+    color: #8E8E8E;
+    background-color: #fff;
+    border:none;
+
+}
+#p-close {
+  color:#1A1A1A;
+}
+.alert{
+  margin-bottom: 0px;
+}
+.border-line{
+  border-color: #C4CDD5;
+  color:#333;
+  font-size: 12px;
+  background-color: #fff;
+}
+.table{
+  margin-left: 10px;
+}
+span.glyphicon.glyphicon-play-circle{
+  color: #57A215;
+}
+
+.third-panel{
+  padding-left: 20px;
+  color:#666;
+}
+ .image-panel{
+  padding-bottom: 20px;
+ }
+ .p-border{
+     padding: 10px;
+    border: solid 2px #eee;
+    border-radius: 5px;
+    line-height: 1.5;
+ }

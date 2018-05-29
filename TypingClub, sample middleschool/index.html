@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Adele Janlou, Edclub Page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ <!-- Bootstrap Js -->    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/custom.css" rel="stylesheet">
+      <script src="assets/vendor/bootstrap/js/respond.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+
+   </head>
+   <body onload="myFunction()"> 
+      <div class="container">
+         <!-- row 1: navigation -->
+         <div class="row">
+         	  <nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+	               <div class="navbar-header">
+	                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+	                  <span class="sr-only">Toggle navigation</span>
+	                  <span class="icon-bar"></span>
+	                  <span class="icon-bar"></span>	                  
+	                  </button>
+	               	</div>
+	                <div class="row"> 
+                    <div class="collapse navbar-collapse" id="collapse" >
+    		               <div class="col-lg-2 col-md-2 col-sm-2 "> 
+                           <a class="navbar-brand" href="#" ><strong><b>TypingClub</b> </strong></a>  
+                       </div>
+    		               <div class="col-lg-10 col-md-10 col-sm-10  search-row"> <!-- search / scrpt  p tag--> 
+                          <div class="col-lg-10" >
+                            <span class="glyphicon glyphicon-search"></span>
+                            <input class="middle-search" type="text" placeholder="Search">
+                            <p  style="float:right; color: #fff; padding-top: 10px;" "> Demo Middle School</p>
+                          </div> <!-- search-->
+                          
+                          <div class="col-lg-2 top-script float-right " style="text-align: right; color: #fff;" ><!-- script login name-->
+                             <div class="row">
+                              <div class="col-lg-6"><span class="badge"> AJ </span></div>
+                               <div class="col-lg-6"><p id="login-name"> </p> </div>                           
+                          </div><!-- script login name-->                           
+                            	                  
+			                </div> <!-- end search -->
+			              </div> <!-- end of collaps -->
+                  </div><!--  class row of collaps-->
+	            </nav>	     
+	       </div>
+         </div>
+         <!-- row 3: article/aside -->
+         <div class="row">
+            <aside class="col-lg-2 col-md-2 col-sm-2 " style="padding-right: 0;">
+
+                	
+                       <ul class="nav flex-column" style="padding-right: 0;">
+               <li class="nav-item" >
+                  <a class="nav-link active" href="#" ><span class="glyphicon glyphicon-calendar"></span>Home</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#" ><span class="glyphicon glyphicon-calendar"></span>Students</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#"><span class="glyphicon glyphicon-calendar"></span>Classes</a>
+               </li> 
+                <li class="nav-item">
+                   <a class="nav-link" href="#"><span class="glyphicon glyphicon-calendar"></span>instructors</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#"><span class="glyphicon glyphicon-calendar"></span>Schools</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#"><span class="glyphicon glyphicon-calendar"></span>Lesson Plans</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#"><span class="glyphicon glyphicon-calendar"></span>Typing Tests</a>
+                    <div class=subside style="padding-right: 0;">
+                    <ul class="sub-ul" style="padding: 0px; list-style: none;">
+                      <li class="sub-li"  style="padding-bottom: 5px;"><a href="#classtopic1"> All Tests </a></li>
+                      <li class="sub-li" style="padding-top: 5px;"><a href="#classtopic2"> Test Library</a></li>
+                    </ul>
+                   </div>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#"><span class="glyphicon glyphicon-calendar"></span>Reports</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#"><span class="glyphicon glyphicon-calendar"></span>Supports</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#" style="margin-top: 100px"><span class="glyphicon glyphicon-calendar"></span>Setting</a>
+               </li>               
+              </ul>
+             </aside>
+             <article  class="col-lg-10  col-md-10 col-sm-10"> 
+                 <div  class="row"  >
+                    <div class="col-lg-10">
+                         <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Typing Test</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">All Test</li>
+                          </ol>
+                        </nav>
+                         <div class="row">
+                            <div class=" col-lg-2 col-md-2"><h4> Sample 1</h4></div>
+                            <div class="col-lg-3 col-md-3"><p id="middle-time"></p></div>
+                          </div>
+                          <div>
+                            <h6><span class="glyphicon glyphicon-calendar"></span> Duplicate Test</h6>
+                         </div>
+                    </div>
+                    <div class="col-lg-2 text-right" style="padding-right: 90px; text-align: right;">
+                      <button type="button" class="btn try-now"   " > Try Now </button>                      
+                    </div>
+                  </div><!-- middle header-->
+                  <div class="row">
+                      <div class="col-lg-8 con-right" > 
+                        <div>
+                           <ul class="list-group">
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-lg-10">
+                                  <div class="media">
+                                      <div class="media-left media-top"><img  src="assets/img/check.png"   style="margin-right:20px; margin-left: 10px; width: 80px;"></div>
+                                      <div class="media-body">
+                                        <h5>Sample 1</h5>
+                                          condimentum nunc ac  fringilla. Donec lacinia congue felis in faucibus condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                      </div>
+                                  </div><!-- media-->
+                                </div> <!-- col10-->
+                                <div class="col-lg-2 text-right" >
+                                  <a href="#"> Edit</a>
+                                </div>                                  
+                              </div> <!-- row-->                             
+                            </li>
+                            <li class="list-group-item">
+                              <h5> Options</h5>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <label>How many time this test be taken?</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>As many time as they want </option>
+                                          <option>once</option>
+                                          <option>once </option>
+                                          <option>once</option>
+                                          <option>once</option>
+                                        </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Does this test generate certificate?</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1" >
+                                          <option>Yes </option>
+                                          <option>No</option>
+                                        </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Speed goal</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>65 WPM </option>
+                                          <option>20 WPM</option>
+                                          <option>14 WPM</option>
+                                        </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Rest button</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Rest button is disable </option>
+                                          <option>Rest button is disable</option>
+                                        </select>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <label>How many time this test be taken?</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Passing requirment:</option>
+                                          <option>Pass anyone who attempts the test</option>
+                                          <option>once </option>
+                                          <option>once</option>
+                                          <option>once</option>
+                                        </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Time based test:</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1" >
+                                          <option>This is 3 minutes test</option>
+                                          <option>No</option>
+                                        </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Backspace behavior:</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Backspace is disable </option>
+                                          <option>20 WPM</option>
+                                          <option>14 WPM</option>
+                                        </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Keyboard and hand guid:</label> 
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Keyboard and hand guid are disable</option>
+                                          <option>Rest button is disable</option>
+                                        </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                           </ul>                          
+                        </div> 
+                        <div  class="panel">
+                          <ul class="list-group">
+                           <h5> Instructor</h5>
+                            <li class="list-group-item" style="border-top: none;">
+                              <div class="alert alert-warning alert-dismissible " style="text-align: left;">
+                             
+                               <div class="row">
+                                  <div class=" col-lg-3">
+                                    <p class="second-panel"> Name</p>
+                                    <p id="p-close"> Adele janlou</p>
+                                  </div>
+                                  <div class=" col-lg-3">
+                                    <p class="second-panel"> last login</p>
+                                    <p id="p-close" >  Feb 3rd, 2016</p>
+                                  </div>
+                                  <div class=" col-lg-3">
+                                    <p class="second-panel"> Access level</p>
+                                    <p id="p-close"> Full access <a href="#"> (limit access)</a> </p>
+                                  </div>
+                                  <div class="col-lg-3">   <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a> </div>
+                                </div>
+                               </div>              
+                            </li>                                   
+                            <li class="list-group-item">
+                              <div class="alert alert-warning alert-dismissible " style="text-align: left;">
+                             
+                               <div class="row">
+                                  <div class=" col-lg-3">
+                                    <p class="second-panel"> Name</p>
+                                    <p id="p-close"> Adele janlou</p>
+                                  </div>
+                                  <div class=" col-lg-3">
+                                    <p class="second-panel"> last login</p>
+                                    <p id="p-close">  Feb 3rd, 2016</p>
+                                  </div>
+                                  <div class=" col-lg-3">
+                                    <p class="second-panel"> Access level</p>
+                                    <p id="p-close"> Full access <a href="#"> (Grant full access)</a> </p>
+                                  </div>
+                                  <div class="col-lg-3">   <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a> </div>
+                                </div>
+                               </div>              
+                            </li>
+                             <li class="list-group-item">
+                             
+                               <p><span class="glyphicon glyphicon-calendar"></span> ADD NEW INSTRUCTOR TO THE TESTE 
+                              <button  class="btn border-line"  style="float: right;"> Add Instructor</button>  </p>
+
+                            </li>    
+                          </ul>
+                        </div>  <!-- end panel2--> 
+                         
+                        <div class="panel">
+                          <h5>Student</h5>
+                          <table class="table">
+                            <thead>
+                              <tr>                                
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Last Login</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>                                
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><p>Wed May 23 2018, at 12 : 41 </p></td>
+                              </tr>
+                              <tr>                                
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><p>Wed May 23 2018, at 12 : 41</p></td>
+                              </tr>
+                              <tr>                                
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td><p>Wed May 23 2018, at 12 : 41</p></td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+
+                        </div>       
+                      </div>   <!-- END COL8-->
+                      <div class="col-lg-3">
+                        <div class="panel">
+                          <h5> Test Status</h5>
+                          <p class="third-panel">This test is active <span class="glyphicon glyphicon glyphicon-play-circle text-left" style="float: right;">
+                           </span> 
+                           </p>   
+                           <p class="third-panel" id="test-time">  Wed May 23 2018, at 12 : 41</p>                       
+                        </div>  
+                        <div class="panel">
+                          <h5> Icon  <a href="#"  style="float: right; padding-right: 10px;"> Edit</a>  </h5>
+                          <div class="text-center">
+                          <img  class="image-panel" src="assets/img/image1.png">
+                          </div>
+                        </div> 
+                         <div class="panel">
+                          <h5> Text  <a href="#"  style="float: right; padding-right: 10px;"> Edit</a>  </h5>
+                          <div class="text-center " style="padding: 20px;">
+                          <p class=" p-border text-left">  Lorem ipsum condimentum nunc ac  fringilla. Donec lacinia congue felis in faucibus condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<p>
+                          </div>
+                          <div class="text-right"  style="padding: 10px" >  <button  class="border-line btn">Add Text</button></div>
+                        </div> 
+
+
+                        </div>    <!-- end col3--> 
+                           
+                       	
+                     
+
+                </div>       
+            </article>
+            
+           
+         </div><!--end main row-->           
+            
+        </div><!-- end container -->
+         <!-- modal windows -->
+      <script>
+        function myFunction() {
+          var person = prompt("Please Enter your Name");
+          if (person != null) {
+              document.getElementById("login-name").innerHTML =
+               person ;
+          }
+        }
+        var d = new Date();
+        document.getElementById("middle-time").innerHTML = d.toDateString()+", at "+ d.getHours()+" : "+ d.getMinutes() ;
+      </script>
+      <script src="../bootstrap/js/jquery.min.js"></script>
+      <script src="../bootstrap/js/bootstrap.min.js"></script>
+   </body>
+</html>
+

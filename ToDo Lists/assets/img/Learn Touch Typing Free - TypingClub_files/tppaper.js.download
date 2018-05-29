@@ -1,0 +1,82 @@
+// The amount of symbol we want to place;
+var count = 100;
+
+// Create a symbol, which we will use to place instances of later:
+var path = new Path.Circle({
+    center: new Point(0, 0),
+    radius: 1,
+    fillColor: 'white'
+});
+
+var symbol = new Symbol(path);
+
+// Place the instances of the symbol:
+for (var i = 0; i < count; i++) {
+    // The center position is a random point in the view:
+    var center = Point.random() * view.size;
+    var placed = symbol.place(center);
+    placed.scale(Math.random() + .6);
+    placed.data.vector = [-1 * (Math.random()/10), 0];
+}
+
+var vector = new Point({
+    angle: 45,
+    length: 0
+});
+
+var mouseVector = vector.clone();
+
+window.move_stars_up = function(){
+    move_up = true;
+}
+
+var yspeeds = [0, 1,1,1,1, 2,2,2,2, 3,3,3, 4,4, 5,  7, 10,10,10,10,11,11,11,11,12,12,12,12,12,12,12,12,11,11,11,11,11,11,10,10,10,10, 7,5,5,5,5, 5, 3,3,3,2,2,2,2,1,1,1,1,1,1];
+var yspeed_index = 0;
+var move_up = false;
+
+// The onFrame function is called up to 60 times a second:
+function onFrame(event) {
+    var y_move = 0;
+    if(move_up){
+        y_move = yspeeds[yspeed_index++];
+        if(yspeed_index >= (yspeeds.length-1)){
+            move_up = false;
+            yspeed_index = 0;
+        }
+    }
+
+    for (var i = 0; i < count; i++) {
+        var item = project.activeLayer.children[i];
+        var size = item.bounds.size;
+        var length = vector.length / 10 * size.width / 10;
+        item.position += vector.normalize(length) + item.data.vector ;
+        if(y_move){
+            item.position.y -= y_move;
+            item.scale(1.004);
+            // item.data.vector = [0,0];
+        }
+        
+        keepInView(item);
+    }
+}
+
+function keepInView(item) {
+    var position = item.position;
+    var itemBounds = item.bounds;
+    var bounds = view.bounds;
+    if (itemBounds.left > bounds.width) {
+        position.x = -item.bounds.width;
+    }
+
+    if (position.x < -itemBounds.width) {
+        position.x = bounds.width + itemBounds.width;
+    }
+
+    if (itemBounds.top > view.size.height) {
+        position.y = -itemBounds.height;
+    }
+
+    if (position.y < -itemBounds.height) {
+        position.y = bounds.height  + itemBounds.height / 2;
+    }
+}

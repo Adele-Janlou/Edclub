@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDo List </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	 <!-- custom CSS/Bootstrap/Js -->    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/custom.css" rel="stylesheet">
+      <script src="assets/vendor/bootstrap/js/respond.js"></script>
+        
+
+</head>
+<body>
+ 	<div class="container">
+ 		<div class="row">
+
+ 			<!-- first box-->
+ 			<div class="  col-lg-2">
+				
+		    </div>
+ 				<!-- TODO box-->
+ 			<div  class=" boxes col-lg-8">
+				<div id="myDIV" class="header">
+					  <h2><p id="typestyle"> My TODO List</p></h2>	
+				
+
+					  <input  class="middle-search" type="text" id="myInput" placeholder="What Should I Do..." ><span onclick="newElement()" class="addBtn"> Add Items</span>					  
+				</div>
+
+					<ul id="myList">
+					 				 
+					</ul>
+				
+				<div class="row botton"> <!-- buttons and item's number-->
+					<div class="col-lg-4">
+						 <p id="itemleft"> </p>
+						 <p id="adele"> </p>
+
+					</div>
+					<div class="col-lg-4">
+						<button id="allbtn" class="btn" type="text"  onclick="myAll()"> All</button>
+						<button id="activebtn" class="btn" type="text" onclick="myActive()"> Active</button>
+						<button id="compeletebtn" class="btn" type="text" onclick="myComp()"> Completed</button>
+					</div>
+					<div class="col-lg-4 text-right">
+						<button id="clearbtn" class="btn" type="text" onclick="myclearcomp()"> Clear Completed</button>
+					</div>
+					
+				</div> <!-- buttons and item's number-->
+		    </div>
+		    <!-- third box-->
+ 			<div class=" col-lg-2"></div> 
+		</div> 
+	</div><!-- end cntainer-->
+
+
+
+
+	<script>	
+
+	// 	
+	
+    
+
+
+//  "close" button 
+var mytodolist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < mytodolist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  mytodolist[i].appendChild(span);
+}
+
+
+// Click on a close button 
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var item = document.createTextNode(inputValue);
+  li.appendChild(item);
+  
+  document.getElementById("myList").appendChild(li);
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  var myCollection = document.getElementsByTagName("li");
+		var items= myCollection.length;
+		var complete= 0 ;
+		var mychecked = document.getElementsByClassName("checked");
+		complete = mychecked.length ;
+		var active = items - complete ;		
+		document.getElementById("itemleft").innerHTML = 
+ 		active + "  active items left ";
+
+}
+
+// Active Item btn
+	function myActive() {
+		var mylilist = document.getElementsByTagName("li");
+		complete = mylilist.length ;
+		for (var i = 0; i < complete; i++) {
+			if (mylilist[i].className === "checked"){
+  					mylilist[i].style.display = "none" ;}}
+		  }
+
+// All item btn
+function myAll() {
+		var mylilist = document.getElementsByTagName("li");
+		complete = mylilist.length ;
+		for (var i = 0; i < complete; i++) {
+			
+  					mylilist[i].style.display = "block" ;}
+		  }
+		  
+// compelete btn
+function myComp() {
+		var mylilist = document.getElementsByTagName("li");
+		complete = mylilist.length ;
+		for (var i = 0; i < complete; i++) {
+			if (mylilist[i].className === ""){
+  					mylilist[i].style.display = "none" ;}
+
+  				}
+		  }
+// clear complete btn
+
+
+	
+		
+
+</script>
+
+</body>
+</html>
