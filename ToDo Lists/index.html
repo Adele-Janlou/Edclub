@@ -156,7 +156,15 @@ function myComp() {
 
   				}
 		  }
-// clear complete btn
+/// clear complete btn
+
+function myclearcomp() {
+		var mylilist = document.getElementsByTagName("li");
+		complete = mylilist.length ;
+		for (var i = 0; i <= complete; i++) {			
+  					mylilist[i].remove();
+  				}
+		  }
 
 
 	
